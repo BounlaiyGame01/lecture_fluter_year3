@@ -1,3 +1,10 @@
+// ======================================================
+// FILE: message_page.dart
+// RENAMED FROM: Pagemessage.dart
+// PURPOSE: Placeholder for the Messages section.
+//          Content to be implemented later.
+// ======================================================
+
 import 'package:flutter/material.dart';
 
 class Pagemessage extends StatefulWidget {
@@ -13,6 +20,7 @@ class _PagemessageState extends State<Pagemessage> {
     return Scaffold(
       body: Center(
         child: Text("This is the Message Page"),
+        // TODO: add message list / chat UI here
       ),
     );
   }

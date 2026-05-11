@@ -1,3 +1,10 @@
+// ======================================================
+// FILE: settings_page.dart
+// RENAMED FROM: PageSetting.dart
+// PURPOSE: Placeholder for the Settings section.
+//          Content to be implemented later.
+// ======================================================
+
 import 'package:flutter/material.dart';
 
 class PageSetting extends StatefulWidget {
@@ -13,6 +20,7 @@ class _PageSettingState extends State<PageSetting> {
     return Scaffold(
       body: Center(
         child: Text("This is the Settings Page"),
+        // TODO: add settings options (theme, language, account, etc.)
       ),
     );
   }

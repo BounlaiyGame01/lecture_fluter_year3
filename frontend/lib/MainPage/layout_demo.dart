@@ -1,3 +1,12 @@
+// ======================================================
+// FILE: layout_demo.dart
+// RENAMED FROM: lecture03-11.dart
+// PURPOSE: Lecture/practice file demonstrating basic
+//          Flutter layout — Column with Spacer and
+//          colored Container boxes. Not part of the
+//          main app flow; used for learning purposes.
+// ======================================================
+
 import 'package:flutter/material.dart';
 
 class MyHomePage extends StatefulWidget {
@@ -14,26 +23,31 @@ class _MyHomePageState extends State<MyHomePage> {
       appBar: AppBar(
         backgroundColor: Colors.blue.shade900,
         title: Text(
-          "ລະບົບສັ່ງຈອງສິນຄ້າ",
+          "ລະບົບສັ່ງຈອງສິນຄ້າ", // "Product Order System"
           style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white),
         ),
       ),
+
+      // ── Body: amber background with 4 colored boxes ───
       body: Container(
         margin: EdgeInsets.all(12),
         color: Colors.amber,
         child: Center(
           child: Column(
             children: [
+              // Box 1 – green
               Container(
                 width: 100,
                 height: 100,
                 color: Colors.green,
                 child: Text(
-                  'ສະແດງຂໍ້ຄວາມທີ່ໃຊ້ໃນ Flutter',
+                  'ສະແດງຂໍ້ຄວາມທີ່ໃຊ້ໃນ Flutter', // "Text displayed in Flutter"
                   style: TextStyle(color: Colors.white, fontSize: 18),
                 ),
               ),
-              Spacer(),
+              Spacer(), // evenly distributes vertical space between boxes
+
+              // Box 2 – blue
               Container(
                 width: 100,
                 height: 100,
@@ -44,6 +58,8 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
               ),
               Spacer(),
+
+              // Box 3 – deep orange
               Container(
                 width: 100,
                 height: 100,
@@ -54,6 +70,8 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
               ),
               Spacer(),
+
+              // Box 4 – black
               Container(
                 width: 100,
                 height: 100,
